@@ -34,10 +34,3 @@ exports.getInstructions = recipe_id => {
     .where('Steps.recipe_id', recipe_id);
 };
 
-const run = async () => {
-  console.log('Recipes', await this.getRecipes(), '\n');
-  console.log('Shopping List', await this.getShoppingList(2), '\n');
-  console.log('Instructions', await this.getInstructions(1), '\n');
-};
-
-run();
