@@ -15,7 +15,6 @@ exports.up = function(knex) {
       .inTable('Ingredients');
     table
       .float('quantity')
-      .unsigned()
       .notNullable();
   });
 };
